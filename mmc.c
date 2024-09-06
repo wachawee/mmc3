@@ -3,7 +3,8 @@
 #include <nes.h>
 #include "neslib.h"
 
-#define NES_MAPPER 2
+#define NES_MAPPER 4
+#define NES_PRG_BANKS 4
 #define NES_CHR_BANKS 0
 
 const char TILESET[256] = {
@@ -107,7 +108,7 @@ void main(void)
 {
   int i,j,x,y;
   int num;
-  x = 2; y = 2;
+  x = 0; y = 1;
   setup_graphics();
   // copy background tiles
   num=0;
